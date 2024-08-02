@@ -55,7 +55,7 @@ const Verify = () => {
         <button type="submit" className="btn btn-success m-3">Verificar</button>
       </form>
       <button onClick={handleResendCode} className="btn btn-secondary m-3">Reenviar código</button>
-      <p><i>* Por favor permanecer en la pantalla de verificación o de lo contrario deberá realizar el registro de usuario nuevamente.</i></p>
+      <p><i>* En caso de ocurrir un error con el código de verificación puede presionar en reenviar.</i></p>
       {message && <p>{message}</p>}
     </div>
   );

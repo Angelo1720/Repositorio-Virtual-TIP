@@ -193,7 +193,7 @@ router.post('/resend-verification-code', async (req, res) => {
     }
 
     const verificationCode = crypto.randomBytes(3).toString('hex');
-    const verificationCodeExpiresAt = new Date(Date.now() + 3 * 60 * 1000); // 3 minutos desde ahora
+    const verificationCodeExpiresAt = new Date(Date.now() + 20 * 60 * 1000);
 
     user.verificationCode = verificationCode;
     user.verificationCodeExpiresAt = verificationCodeExpiresAt;
