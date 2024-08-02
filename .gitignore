@@ -1,0 +1,49 @@
+# Node modules
+/node_modules
+/backend/node_modules
+/frontend/node_modules
+
+# Logs
+*.log
+/backend/*.log
+/frontend/*.log
+
+# Build directories
+/build
+/backend/build
+/frontend/build
+
+# Coverage directories
+/coverage
+/backend/coverage
+/frontend/coverage
+
+# OS generated files
+.DS_STORE
+
+# Editor directories and files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Others
+*.pyc
+.grunt
+_SpecRunner.html
+__benchmarks__
+.module-cache
+fixtures/dom/public/react-dom.js
+fixtures/dom/public/react.js
+test/the-files-to-test.generated.js
+chrome-user-data
+*.swp
+*.swo
+
+# Specific to backend
+/backend/scripts/flow/*/.flowconfig
+/backend/.flowconfig
+/backend/remote-repo
+
+# Specific to frontend
+/frontend/.module-cache

@@ -1,0 +1,45 @@
+footer {
+  background-color: #39b4ff;
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-image {
+  width: 25vw;
+  max-width: 150px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+@media (max-width: 450px) {
+  .divImagen div {
+    width: 30%;
+    height: 20%;
+  }
+}
+
+@media (max-width: 360px) {
+  .divImagen div {
+    width: 20%;
+    height: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .divImagen div {
+    width: 20%;
+    height: 20%;
+  }
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.row div {
+  align-content: center;
+}
