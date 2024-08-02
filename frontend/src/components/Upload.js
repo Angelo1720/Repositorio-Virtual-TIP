@@ -100,9 +100,16 @@ const Upload = () => {
     } else if (document.filename.match(/\.(jpg|jpeg|png)$/)) {
       const imageURL = `http://127.0.0.1:5000/documents/download/${document._id}`;
       return <img src={imageURL} alt="Image Thumbnail" width="200" height="100" />;
+    } else if (document.filename.endsWith('.xlsx') || document.filename.endsWith('.xls')) {
+      return <img src="/images/excel.png" alt="Excel Icon" width="100" height="100" />;
+    } else if (document.filename.endsWith('.doc') || document.filename.endsWith('.docx') || document.filename.endsWith('.txt')) {
+      return <img src="/images/google-docs.png" alt="Doc Icon" width="100" height="100" />;
+    } else if (document.filename.endsWith('.ppt') || document.filename.endsWith('.pptx')) {
+      return <img src="/images/ppt.png" alt="Ppt Icon" width="100" height="100" />;
+    } else {
+      return <img src="/images/folder.png" alt="Folder Icon" width="100" height="100" />;
     }
-    return null;
-  };
+  }; 
 
   return (
     <div className="container">
